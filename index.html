@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>당신의 시험은 안녕하십니까?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>당신의 시험은 안녕하십니까?</h1>
+
+  <div id="controls">
+    <input type="file" id="pdfInput" accept="application/pdf" />
+    <button id="generateQuizBtn">퀴즈 생성하기</button>
+    <button id="moreQuizBtn">더 풀어보기</button>
+    <button id="retryQuizBtn">다시 풀어보기</button>
+  </div>
+
+  <div id="status">PDF를 업로드하고, 퀴즈 생성하기를 눌러주세요.</div>
+  <div id="hud">점수: 0 | 문제: 0 / 0</div>
+
+  <!-- 여기 canvas 태그를 올바르게 수정 -->
+  <canvas id="gameCanvas" width="800" height="700"></canvas>
+
+  <div id="footer">made by Taejin</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
